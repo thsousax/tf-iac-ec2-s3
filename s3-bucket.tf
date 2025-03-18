@@ -1,8 +1,5 @@
 resource "aws_s3_bucket" "this" {
-  bucket = var.bucket_name
+  bucket = local.bucket_name
 
-  tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
-  }
+  tags = local.common_tags
 }

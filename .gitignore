@@ -1,0 +1,3 @@
+# Ignorar arquivos de estado do Terraform
+terraform.tfstate
+terraform.tfstate.backup
