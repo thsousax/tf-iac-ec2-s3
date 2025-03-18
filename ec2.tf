@@ -1,9 +1,10 @@
 #==================================================================
-# s3-bucket.tf - Provisionamento do Recurso S3 Bucket
+# ec2.tf - Provisionamento do Recurso EC2
 #==================================================================
 
-resource "aws_s3_bucket" "this" {
-  bucket = local.bucket_name
+resource "aws_instance" "this" {
+  ami           = var.instance_ami 
+  instance_type = var.instance_type
 
   tags = local.common_tags
 }

@@ -1,3 +1,7 @@
+#==================================================================
+# locals.tf - Arquivo de definição das Variaveis Locais 
+#==================================================================
+
 locals {
   bucket_name = "lab-${var.environment}-${var.bucket_name}"
   common_tags = {

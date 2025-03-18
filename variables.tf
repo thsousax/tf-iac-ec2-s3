@@ -23,18 +23,18 @@ variable "aws_profile" {
   description = "Profile Aws CLI"
 }
 
-# #------------------------------------------------------------------
-# # EC2 Instance
-# #------------------------------------------------------------------
-# variable "instance_ami" {
-#   type        = string
-#   description = "Ami do EC2"
-# }
+#------------------------------------------------------------------
+# EC2 Instance
+#------------------------------------------------------------------
+variable "instance_ami" {
+  type        = string
+  description = "Ami do EC2"
+}
 
-# variable "instance_type" {
-#   type        = string
-#   description = "Tipo da EC2"
-# }
+variable "instance_type" {
+  type        = string
+  description = "Tipo da EC2"
+}
 
 #------------------------------------------------------------------
 # S3 Bucket
